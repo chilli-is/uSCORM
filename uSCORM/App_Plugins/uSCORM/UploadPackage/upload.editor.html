@@ -1,0 +1,36 @@
+﻿<div ng-controller="uSCORM.UploadPackageController">
+    
+    <div class="umb-property-editor">
+
+        <div ng-if="assetId == null || assetId == 0">
+
+            You must give this content object a name and save it, before you will be able to upload an asset.
+
+        </div>
+
+        <div ng-if="assetId != null && assetId != 0" class="umb-editor">
+            
+            <div>
+                <input type="file" class="umb-editor umb-textstring" ngf-select="" ng-model="files" ng-multiple="false" ngf-change="fileSelected(files)" />
+
+                <br />
+                <button type="button" data-hotkey="ctrl+s" class="btn btn-success" ng-click="uploadFile()">
+                    Upload
+                </button>
+            </div>
+
+            <div style="margin-top: 15px;" ng-if="model.value.length > 0" class="umb-editor">
+
+                <label style="margin: 5px 10px 0 0">Default File: </label>&nbsp;<input type="text" ng-model="model.value" class="" />
+                <br /><br />
+                <label style="margin: 2px 10px 0 0">Url: </label>&nbsp;<a style="text-decoration:underline;" target="_blank" ng-href="{{getFullUrl()}}">{{getFullUrl()}}</a>&nbsp;&nbsp;<span class="fa fa-external-link"></span>
+
+            </div>
+
+        </div>
+
+        
+
+    </div>
+
+</div>

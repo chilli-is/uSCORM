@@ -1,0 +1,21 @@
+﻿{
+	propertyEditors: [
+		{
+			alias: "UploadPackage",
+			name: "Upload SCORM 1.2 Package",
+			editor: {
+				view: "~/App_Plugins/uSCORM/UploadPackage/upload.editor.html"
+			}
+			
+		}
+	],
+
+	javascript: [
+		"~/App_Plugins/uSCORM/UploadPackage/upload.controller.js",
+		'~/App_Plugins/uSCORM/UploadPackage/file.upload.api.service.js',
+		'~/App_Plugins/uSCORM/UploadPackage/ng-file-upload-all.min.js'
+    ],
+    css: [
+        '~/App_Plugins/uSCORM/UploadPackage/styles.css'
+    ]
+}

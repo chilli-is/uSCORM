@@ -259,3 +259,8 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+/uSCORM/App_Data/Logs
+/uSCORM/App_Data/TEMP/ClientDependency
+/uSCORM/App_Data/TEMP/DistCache
+/uSCORM/App_Data/TEMP/PluginCache
+/uSCORM/uSCORM-Assets
